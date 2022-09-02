@@ -1,0 +1,57 @@
+import pyautogui
+import time
+
+def refresh():
+    #time.sleep(2)
+    pyautogui.rightClick(858, 532)
+    time.sleep(0.1)
+    pyautogui.click(924, 591)
+    for i in range(0,5):
+        pyautogui.hotkey('f5')
+
+def wifi():
+    t = pyautogui.position()
+    pyautogui.click(1687, 1055)
+    time.sleep(0.15)
+    pyautogui.click(1523, 989)
+    time.sleep(0.19)
+    pyautogui.click(1200, 1055)
+    pyautogui.click(t,clicks=0)
+
+def bluetooth():
+    t = pyautogui.position()
+    pyautogui.click(1873, 1060)
+    time.sleep(0.7)
+    pyautogui.click(1742, 633)
+    time.sleep(0.2)
+    pyautogui.click(1200, 1055)
+    pyautogui.click(t,clicks=0)
+
+def airoplane():
+    t = pyautogui.position()
+    pyautogui.click(1687, 1055)
+    time.sleep(0.1)
+    pyautogui.click(1623, 989)
+    time.sleep(0.1)
+    pyautogui.click(1200, 1055)
+    pyautogui.click(t,clicks=0)
+
+def connectMobile():
+    t = pyautogui.position()
+    pyautogui.click(46,161,2)
+    time.sleep(0.1)
+    pyautogui.rightClick(1502,484)
+    time.sleep(0.1)
+    pyautogui.click(1580,705)
+    time.sleep(0.1)
+    pyautogui.click(1151,811,2,0.01)
+    time.sleep(0.1)
+    pyautogui.click(1143,466)
+    time.sleep(0.1)
+    pyautogui.click(1138,493)
+    time.sleep(0.1)
+    pyautogui.click(1151,811,4,0.01)
+    pyautogui.click(t,clicks=0)
+
+
+
